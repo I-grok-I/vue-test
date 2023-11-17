@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@twa-dev/sdk": "^6.9.1",
+    "@vueuse/core": "^10.6.1",
     "axios": "^1.6.1",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue3-lottie": "^3.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
