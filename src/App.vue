@@ -1,6 +1,6 @@
 <template>
     <div>
-        Привет!
+        Привет!!!
     </div>
 </template>
 
