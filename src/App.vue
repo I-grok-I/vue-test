@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div style="margin: auto;">
+        <div style="margin: auto; color: whitesmoke;">
             <strong> Hello, World! </strong>
         </div>
     </div>
