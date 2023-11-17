@@ -13,6 +13,9 @@ const { showMainButton, hideMainButton, setButtonLoader, expand, getViewportHeig
 
 onMounted(() => {
     expand()
+    showMainButton('Hello, world', () => {
+        console.log('Hello, world')
+    })
 })
 
 
