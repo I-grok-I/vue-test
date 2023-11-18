@@ -1,7 +1,7 @@
 <template>
     <div>
         <div style="margin: auto; color: whitesmoke;">
-            <strong> Hello, World! </strong>
+            <strong> Hellooo, World! </strong>
         </div>
     </div>
 </template>
@@ -9,14 +9,14 @@
 <script setup lang="ts">
 import { useTelegram } from './services'
 import { onMounted } from 'vue';
-const { showMainButton, hideMainButton, setButtonLoader, expand, getViewportHeight, vibrate } = useTelegram()
+const { showMainButton, hideMainButton, colorScheme, expand, getViewportHeight } = useTelegram()
 
 
 
 onMounted(() => {
-    expand()
+
     showMainButton('Hello, world', () => {
-        console.log('Hello, world')
+        hideMainButton()
     })
 })
 
@@ -24,9 +24,17 @@ onMounted(() => {
 </script>
 
 <style>
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: var(--color-bg-secondary);
+}
+
+.app {
+    color: var(--color-text);
+    position: relative;
+    user-select: none;
 }
 </style>
