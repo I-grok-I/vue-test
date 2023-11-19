@@ -9,15 +9,18 @@
 <script setup lang="ts">
 import { useTelegram } from './services'
 import { onMounted } from 'vue';
-const { showMainButton, hideMainButton, colorScheme, expand, getViewportHeight } = useTelegram()
+const { showMainButton, hideMainButton, showAlert, showBackButton } = useTelegram()
 
 
 
 onMounted(() => {
 
+
     showMainButton('Hello, world', () => {
-        alert('aaa')
+
+        showAlert('aAaa.')
     })
+
 })
 
 
