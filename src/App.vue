@@ -18,7 +18,7 @@ onMounted(() => {
 
     showMainButton('Hello, world', () => {
 
-        showAlert('aAaa.')
+        alert('aAaa.')
     })
 
 })
