@@ -1,9 +1,11 @@
 :root {
+
   /**
    * If an element has overflow: hidden and border-radius, overflow is ignored in Safari.
    * This fix solves the issue
    */
-   --safari-overflow-hidden-fix {
+  --safari-overflow-hidden-fix {
+
     /**
      * Hack to target only Safari and not all webkit browsers
      */
@@ -18,7 +20,7 @@
   padding: 20px;
   border-radius: 10px 10px 0 0;
   color: #fff;
-  background-color: var(--color-bg-button);
+  background-color: rgb(68, 129, 187);
   position: fixed;
   bottom: 0;
   right: 0;

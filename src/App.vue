@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div style="margin: auto; color: whitesmoke;">
+    <div class="app">
+        <div>
             <strong> Hellooo, World! </strong>
         </div>
     </div>
@@ -16,7 +16,7 @@ const { showMainButton, hideMainButton, colorScheme, expand, getViewportHeight }
 onMounted(() => {
 
     showMainButton('Hello, world', () => {
-        console.log('Hi!');
+        alert('aaa')
     })
 })
 
@@ -25,16 +25,21 @@ onMounted(() => {
 
 <style>
 body {
+    background-color: rgb(27, 55, 66);
+}
+
+* {
     margin: 0;
-    display: flex;
-    min-width: 320px;
-    min-height: 100vh;
-    background-color: var(--color-bg-secondary);
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .app {
+    /* margin: ; */
+    display: flex;
     color: var(--color-text);
     position: relative;
     user-select: none;
+    background-color: gray;
 }
 </style>
