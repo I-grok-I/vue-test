@@ -16,7 +16,7 @@ const { showMainButton, hideMainButton, colorScheme, expand, getViewportHeight }
 onMounted(() => {
 
     showMainButton('Hello, world', () => {
-        hideMainButton()
+        console.log('Hi!');
     })
 })
 
