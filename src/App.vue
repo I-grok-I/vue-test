@@ -1,6 +1,6 @@
 <template>
     <div class="app">
-        <AppearanceProvider theme="apple" colorScheme="dark" platform="macos">
+        <AppearanceProvider>
             <Switch />
             <RadioButton />
 
