@@ -1,16 +1,19 @@
 <template>
     <div class="app">
-        <div>
-            <strong> Hellooo, World! </strong>
-        </div>
+        <AppearanceProvider theme="apple" colorScheme="dark" platform="macos">
+            <Switch />
+            <RadioButton />
+
+        </AppearanceProvider>
     </div>
 </template>
 
 <script setup lang="ts">
 import { useTelegram } from './services'
 import { onMounted } from 'vue';
+import { AppearanceProvider, Switch, RadioButton } from '@erfanmola/televue';
+import '@erfanmola/televue/style.css';
 const { showMainButton, hideMainButton, showAlert, showBackButton } = useTelegram()
-
 
 
 onMounted(() => {

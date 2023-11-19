@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@erfanmola/televue": "^0.1.6",
     "@twa-dev/sdk": "^6.9.1",
     "@vueuse/core": "^10.6.1",
     "axios": "^1.6.1",
