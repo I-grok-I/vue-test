@@ -18,10 +18,14 @@ const { showMainButton, hideMainButton, showAlert, showBackButton } = useTelegra
 
 onMounted(() => {
 
-    showMainButton('Hello, world', () => {
+    const colors = ['red', 'green', 'yellow', 'blue', 'magenta']
 
-        alert('aAaa.')
-        WebApp.requestContact(() => { console.log('contact'); })
+    showMainButton('Hello, world', () => {
+        const color: string = colors[Math.ceil(Math.random() * colors.length - 1)]
+
+        const element = document.getElementById('body') as HTMLElement;
+        element.style.backgroundColor = color;
+
     })
 
 })
