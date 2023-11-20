@@ -3,7 +3,6 @@
         <AppearanceProvider>
             <Switch />
             <RadioButton />
-
         </AppearanceProvider>
     </div>
 </template>
@@ -13,15 +12,16 @@ import { useTelegram } from './services'
 import { onMounted } from 'vue';
 import { AppearanceProvider, Switch, RadioButton } from '@erfanmola/televue';
 import '@erfanmola/televue/style.css';
+import WebApp from '@twa-dev/sdk';
 const { showMainButton, hideMainButton, showAlert, showBackButton } = useTelegram()
 
 
 onMounted(() => {
 
-
     showMainButton('Hello, world', () => {
 
         alert('aAaa.')
+        WebApp.requestContact(() => { console.log('contact'); })
     })
 
 })
